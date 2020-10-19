@@ -11,24 +11,20 @@ body{
     font-family: BrandonTextWeb-Regular,sans-serif;
     font-size: 18px;
     line-height: 25px;
-    background: url("/AssignmentOne/images/background.jpg") repeat-y;
-    color: #869ba9;
+    background-color: #051622;
+    /* background-color: #869ba9; */
 }
 
 header{
     height: 10%;
     display: flex;
-    background-color: cornflowerblue;
+    color: #1BA098 ;
+    justify-content: space-between;
 }
 
-nav{
-    height: 5%;
-    display: flex;
-    align-items: center;
-}
 
 main{
-    height: 80%;
+    height: 85%;
     grid-area: main;
     display: flex;
     flex-direction: column;
@@ -45,25 +41,45 @@ footer{
 /* header */
 
 header h1{
-    font-size: 531%;
-    PADDING: 2%;
-    MARGIN: auto 10%;
+  font-size: 500%;
+}
+
+header .logo{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 header .title{
-    margin: 3%;
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
-/* nav */
-
-nav ul{
-    text-decoration: none;
+header .nav{
+    flex: 2;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+header .nav ul{
+    display: flex;
+    justify-content: space-evenly;
+    width: 80%;
     list-style: none;
 }
 
-nav li{
-    align-items: stretch;
+header .nav li{
+    flex: 1;
+    justify-content: space-evenly;
+}
+
+hr{
+    color: #DEB992;
 }
 
 /* main */
