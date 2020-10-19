@@ -8,22 +8,28 @@ html{
 }
 body{
     height: 100%;
+    font-family: BrandonTextWeb-Regular,sans-serif;
+    font-size: 18px;
+    line-height: 25px;
+    background: url("/AssignmentOne/images/background.jpg") repeat-y;
+    color: #869ba9;
 }
 
 header{
     height: 10%;
-    grid-area: header;
-    background-color: yellow;
+    display: flex;
+    background-color: cornflowerblue;
 }
 
 nav{
     height: 5%;
+    display: flex;
+    align-items: center;
 }
 
 main{
     height: 80%;
     grid-area: main;
-    background-color: blue;
     display: flex;
     flex-direction: column;
 }
@@ -33,7 +39,19 @@ footer{
     clear: both;
     grid-area: footer;
     height: 5%;
-    background-color: chartreuse;
+}
+
+
+/* header */
+
+header h1{
+    font-size: 531%;
+    PADDING: 2%;
+    MARGIN: auto 10%;
+}
+
+header .title{
+    margin: 3%;
 }
 
 /* nav */
@@ -41,25 +59,38 @@ footer{
 nav ul{
     text-decoration: none;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    list-style: none;
 }
 
+nav li{
+    align-items: stretch;
+}
+
+/* main */
+
+main p{
+    align-items: center;
+}
+
+main img{
+    align-items: center;
+    margin: 3%;
+}
 /* section left*/
 
 .section_left{
     display: flex;
     flex: 1;
+    align-items: center;
+
 }
 
 .section_left .text_setion{
     flex: 2;
-    background-color: darkgreen;
 }
 
 .section_left .img_setion{
     flex: 1;
-    background-color: magenta;
 }
 
 /* section right */
@@ -67,16 +98,15 @@ nav ul{
 .section_right{
     display: flex;
     flex: 1;
+    align-items: center;
 }
 
 .section_right .text_setion{
     flex: 2;
-    background-color: darkgreen;
 }
 
 .section_right >.img_setion{
     flex: 1;
-    background-color: magenta;
 }
 
 /* float  */
