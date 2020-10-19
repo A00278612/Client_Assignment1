@@ -4,11 +4,10 @@
     padding: 0;
 }
 html{
-    font-size: 300%;
+  
 }
 body{
     height: 100%;
-    background-color: black;
 }
 
 header{
@@ -17,6 +16,9 @@ header{
     background-color: yellow;
 }
 
+nav{
+    height: 5%;
+}
 
 main{
     height: 80%;
@@ -30,14 +32,24 @@ main{
 footer{
     clear: both;
     grid-area: footer;
-    height: 10%;
-    background-color: crimson;
+    height: 5%;
+    background-color: chartreuse;
 }
 
-/* section */
+/* nav */
+
+nav ul{
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* section left*/
 
 .section_left{
     display: flex;
+    flex: 1;
 }
 
 .section_left .text_setion{
@@ -50,8 +62,11 @@ footer{
     background-color: magenta;
 }
 
+/* section right */
+
 .section_right{
     display: flex;
+    flex: 1;
 }
 
 .section_right .text_setion{
